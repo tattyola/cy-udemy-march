@@ -1,0 +1,23 @@
+{
+  "name": "cy-udemy-march",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "node_modules/.bin/cypress run",
+    "headless": "npm run test --headed",
+    "chromeTest": "npm run test --browser chrome --parallel",
+    "recordDashBoardTest": "npm run test --record --key 26495892-6a93-42eb-8cb7-b6841b5fbd50 --reporter mochawesome",
+    "greenKartTest": "npm run test --spec 'cypress/e2e/test2.cy.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^12.7.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
